@@ -1,0 +1,185 @@
+body{
+    background-color: black;
+    color: azure;
+}
+.wrapper{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.special{
+    margin: 0;
+    padding: 0;
+    background-color: red;
+    font-size:15px;
+}
+.header-back{
+    background-color: rgba(9, 105, 9, 0.795);
+    color: aliceblue;
+    border: 2px solid transparent;
+}
+hr{
+    margin: 5px auto;
+    border: 5px solid gray;
+    width: 80%;
+    border-radius: 5px;
+}
+.hr{
+    border: 3px solid rgba(207, 22, 22, 0.692);
+    margin: 15px;
+    border-radius: 2px;
+}
+.title,.summary{
+    text-align: center;
+}
+.title{
+    font-size: 30px;
+    margin-top: 4px;
+    margin-bottom: 7px;
+}
+
+.summary{
+    font-size: 15px;
+   margin-top: 2px;
+   margin-bottom: 4px;
+}
+.summary:hover{
+    background-color: gray;
+}
+.pricingPlan{
+    width: 300px;
+    border-radius: 25px;
+    border: 2px solid red;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.909);
+    overflow: hidden;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555555;
+    margin: 15px;
+}
+.highlight{
+    box-shadow: 0 0  15px rgba(0, 0, 0, 0.4);
+    transform: scale(1.05);
+}
+
+.features,.no-features{
+    list-style: none;
+    
+}
+.features::before{
+    content: "\2714";
+    padding-right: 5px;
+    color: green;
+}
+.no-features::before{
+    content: "\2716";
+    padding-right: 5px;
+    color: red;
+}
+
+.list{
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: rgb(156, 151, 151);
+    margin: 4px;
+}
+
+.price,.duration{
+    text-align: center;
+    color: azure;
+    margin: 5px;
+}
+.price{
+    font-weight:bold;
+    font-size: 30px;
+    margin: 5px;
+    color: green;
+}
+.price:hover{
+    color: rgb(156, 151, 151);
+}
+.prices{
+    font-size: 20px;
+    color: green;
+}
+.prices:hover{
+    color: rgb(156, 151, 151);
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+.purchase{
+   display:inline-block;
+   margin:20px 90px;
+   padding: 10px 20px;
+   color: aliceblue;
+   border: 1px solid red;
+   border-radius: 5px;
+   background: red;
+   letter-spacing: 0.02rem;
+   text-transform: uppercase;
+   font-weight:bold;
+}
+.purchase:hover{
+  background-color: rgba(182, 77, 77, 0.692);
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        background-color: #333;
+    }
+    .wrapper {
+        flex-direction: column;
+    }
+    .special {
+        font-size: 12px;
+    }
+    .header-back {
+        padding: 10px;
+    }
+    hr, .hr {
+        width: 50%;
+    }
+    .title {
+        font-size: 24px;
+    }
+    .summary {
+        font-size: 12px;
+    }
+    .pricingPlan {
+        width: 90%;
+    }
+    .price {
+        font-size: 24px;
+    }
+    .prices {
+        font-size: 18px;
+    }
+    .purchase {
+        margin: 10px 45px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header-back {
+        padding: 5px;
+    }
+    .title {
+        font-size: 20px;
+    }
+    .summary {
+        font-size: 10px;
+    }
+    .price {
+        font-size: 20px;
+    }
+    .prices {
+        font-size: 16px;
+    }
+    .purchase {
+        margin: 10px 30px;
+    }
+}
